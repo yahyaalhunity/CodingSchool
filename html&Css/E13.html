@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header '
+    'main main main main right right '
+    'footer footer footer footer footer footer ';
+  grid-gap: 10px;
+  background-color: #f4f4f5;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  font-size: 30px;
+}
+.m{
+    margin: 0% 5%;
+    display: flex;
+}
+</style>
+</head>
+<body style="background-color: rgb(235, 235, 174) ;">
+
+
+
+<div class="grid-container" style="border: 1px solid rgb(235, 235, 174) ; background-color:rgb(235, 235, 174)  ; ">
+  <div class="item1" style="background-color: rgb(227, 236, 92); text-align: left; margin-left: 5%; margin-right: 9%; padding:2% 0%; ">2- Columns Layout</div>
+  <div class="m">
+  <div class="item3" style="width: 70%;">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam veniam, quia corrupti et totam placeat labore, non iste ex tenetur vitae numquam dolorum? Voluptatem hic adipisci ullam magnam nulla quaerat.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae tempora id, ipsa eaque hic cupiditate libero quia minus maxime officiis expedita repellendus error voluptates, ipsum culpa quo dignissimos. Labore.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit architecto cupiditate et qui odio officia! Voluptatibus, nihil. Numquam eaque maxime, hic excepturi natus assumenda sapiente laudantium rerum expedita id.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam veniam, quia corrupti et totam placeat labore, non iste ex tenetur vitae numquam dolorum? Voluptatem hic adipisci ullam magnam nulla quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae tempora id, ipsa eaque hic cupiditate libero quia minus maxime officiis expedita repellendus error voluptates, ipsum culpa quo dignissimos. Labore.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam veniam, quia corrupti et totam placeat labore, non iste ex tenetur vitae numquam dolorum? Voluptatem hic adipisci ullam magnam nulla quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae tempora id, ipsa eaque hic cupiditate libero quia minus maxime officiis expedita repellendus error voluptates, ipsum culpa quo dignissimos. Labore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit architecto cupiditate et qui odio officia! Voluptatibus, nihil. Numquam eaque maxime, hic excepturi natus assumenda sapiente laudantium rerum expedita id.
+    </p>
+    </div>  
+  <div class="item4" style=" width:40%; background-color: grey; padding: 5px;">
+    <ul>
+      <li>item #1</li>
+      <li>item #2</li>
+      <li>item #3</li>
+  </ul>
+</div></div>
+  <div class="item5" style="background-image: url(/img/footer.jpg); color: white; text-align: center;">Footer</div>
+</div>
+
+</body>
+</html>
+
+
